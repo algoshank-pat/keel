@@ -26,7 +26,7 @@
 
 ## The problem
 
-In a B2B supply chain, orders flow between trading partners as **EDI** messages (X12 / EDIFACT — an `850` purchase order, an `855` acknowledgement, an `856` shipping notice, and so on). When one of those orders silently fails - a partner endpoint goes down, an `850` is never acknowledged, a message is rejected - the business often doesn't find out until a shipment is late and revenue has already slipped. The information needed to react (which order, which partner, what it's worth, who else could supply it) is scattered across integration platforms, ERP systems, and partner records.
+In a B2B supply chain, orders flow between trading partners as **EDI** messages (X12 / EDIFACT - an `850` purchase order, an `855` acknowledgement, an `856` shipping notice, and so on). When one of those orders silently fails - a partner endpoint goes down, an `850` is never acknowledged, a message is rejected - the business often doesn't find out until a shipment is late and revenue has already slipped. The information needed to react (which order, which partner, what it's worth, who else could supply it) is scattered across integration platforms, ERP systems, and partner records.
 
 **Keel closes that gap.** It continuously watches EDI partner and order activity, quantifies the revenue impact of a failure the moment it's detected, and uses an agentic loop to recommend a concrete next action - including which alternative supplier to onboard or route business to.
 
