@@ -12,7 +12,7 @@
 
 # ⚓ Keel
 
-**Agentic AI for B2B EDI supply chains — it watches your trading partners, flags the revenue at risk when an order fails, and recommends an alternative supplier before the gap becomes a problem.**
+**Agentic AI for B2B EDI supply chains - it watches your trading partners, flags the revenue at risk when an order fails, and recommends an alternative supplier before the gap becomes a problem.**
 
 [![CI](https://github.com/algoshank-pat/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/algoshank-pat/<REPO>/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -26,16 +26,16 @@
 
 ## The problem
 
-In a B2B supply chain, orders flow between trading partners as **EDI** messages (X12 / EDIFACT — an `850` purchase order, an `855` acknowledgement, an `856` shipping notice, and so on). When one of those orders silently fails — a partner endpoint goes down, an `850` is never acknowledged, a message is rejected — the business often doesn't find out until a shipment is late and revenue has already slipped. The information needed to react (which order, which partner, what it's worth, who else could supply it) is scattered across integration platforms, ERP systems, and partner records.
+In a B2B supply chain, orders flow between trading partners as **EDI** messages (X12 / EDIFACT — an `850` purchase order, an `855` acknowledgement, an `856` shipping notice, and so on). When one of those orders silently fails - a partner endpoint goes down, an `850` is never acknowledged, a message is rejected - the business often doesn't find out until a shipment is late and revenue has already slipped. The information needed to react (which order, which partner, what it's worth, who else could supply it) is scattered across integration platforms, ERP systems, and partner records.
 
-**Keel closes that gap.** It continuously watches EDI partner and order activity, quantifies the revenue impact of a failure the moment it's detected, and uses an agentic loop to recommend a concrete next action — including which alternative supplier to onboard or route business to.
+**Keel closes that gap.** It continuously watches EDI partner and order activity, quantifies the revenue impact of a failure the moment it's detected, and uses an agentic loop to recommend a concrete next action - including which alternative supplier to onboard or route business to.
 
 ## What it does
 
-- 🔍 **Tracks B2B EDI trading partners** — monitors the health and message flow of partners across the supply chain, so a stalled or failing partner surfaces immediately instead of days later.
-- 💸 **Quantifies revenue at risk** — when a purchase order fails or stalls, Keel extracts the order details and calculates the revenue impact, turning a silent integration error into a ranked, business-prioritized alert.
-- 🔌 **Integrates through your API & integration layer** — connects to existing Integration / API Management platforms to pull live order and partner data rather than duplicating it, fitting into the architecture you already run.
-- 🤝 **Recommends an alternative supplier** — reasons over partner capability, history, and the at-risk order to suggest the best alternative supplier to onboard or do business with, and can kick off the onboarding workflow.
+- 🔍 **Tracks B2B EDI trading partners** - monitors the health and message flow of partners across the supply chain, so a stalled or failing partner surfaces immediately instead of days later.
+- 💸 **Quantifies revenue at risk** - when a purchase order fails or stalls, Keel extracts the order details and calculates the revenue impact, turning a silent integration error into a ranked, business-prioritized alert.
+- 🔌 **Integrates through your API & integration layer** - connects to existing Integration / API Management platforms to pull live order and partner data rather than duplicating it, fitting into the architecture you already run.
+- 🤝 **Recommends an alternative supplier** - reasons over partner capability, history, and the at-risk order to suggest the best alternative supplier to onboard or do business with, and can kick off the onboarding workflow.
 
 ## 🎬 Demo
 
